@@ -31,14 +31,18 @@ If you want to run this project on your own machine:
 2. Install the required dependencies:
    ```bash
    pip install -r requirements.txt
-**3. Add your API Key:**
-Create a `.streamlit/secrets.toml` file and add your API-Football key:
-
-```toml
+3. Add your API Key:
+   Create a `.streamlit/secrets.toml` file and add your API-Football key:
+   ```toml
       API_KEY = "your_api_key_here"
-```
-**4. Run the application:**
+   ```
+4. Run the application:
+   ```bash
+   streamlit run dashboard.py
 
-```bash
-streamlit run dashboard.py
+## 🔑 Prerequisites
+To run this project locally, you will need a free API key from API-Football.
 
+1. Go to the [API-Football Dashboard](https://dashboard.api-football.com/register) and create a free account.
+2. Navigate to your account dashboard to find your unique API Key.
+3. You get 100 free requests per day, which is plenty for this dashboard!
