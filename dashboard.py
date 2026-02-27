@@ -12,7 +12,7 @@ def get_match_data():
     url = "https://v3.football.api-sports.io/fixtures"
     querystring = {"team": "541", "season": "2023"}
     # KEEP YOUR KEY HERE FOR NOW to test locally
-    headers = {"x-apisports-key": "YOUR_API_KEY"} 
+    headers = {"x-apisports-key": st.secrets["API_KEY"]}
     
     response = requests.get(url, headers=headers, params=querystring)
     matches = response.json()['response']
@@ -87,4 +87,5 @@ st.plotly_chart(fig, use_container_width=True)
 
 # --- RAW DATA ---
 st.subheader("Match Database")
+
 st.dataframe(display_df, use_container_width=True)
