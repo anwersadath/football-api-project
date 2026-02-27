@@ -31,11 +31,14 @@ If you want to run this project on your own machine:
 2. Install the required dependencies:
    ```bash
    pip install -r requirements.txt
-Create a .streamlit/secrets.toml file and add your API-Football key:
+**3. Add your API Key:**
+Create a `.streamlit/secrets.toml` file and add your API-Football key:
 
-Ini, TOML
-API_KEY = "your_api_key_here"
-Run the application:
+```toml
+      API_KEY = "your_api_key_here"
+```
+**4. Run the application:**
 
-Bash
+```bash
 streamlit run dashboard.py
+
